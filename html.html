@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab1 - Object Management</title>
+    <style>
+      body {
+        background-image: url(img/122.png);
+        font-family: "Times New Roman", Times, serif, sans-serif;
+      }
+      .menu {
+        margin-bottom: 20px;
+      }
+      .menu a {
+        margin-right: 25px;
+        text-decoration: none;
+        color: red;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 10px;
+      }
+      th,
+      td {
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="color: chartreuse">QUẢN LÍ TIỆM BÁNH</h1>
+
+    <!-- Menu -->
+    <div class="menu">
+      <a href="#requirement">Requirement</a>
+      <a href="#design">Design</a>
+      <a href="#implement">Implement</a>
+    </div>
+
+    <!-- Tab Requirement -->
+    <section id="requirement">
+      <h2 style="color: brown">Requirement</h2>
+      <p style="color: purple">
+        Chọn 1 đối tượng bất kỳ trong thế giới thực, ví dụ như lớp môn học,
+        giảng viên,... Sau đó thiết kế chức năng Quản lý đối tượng đó trên HTML
+        bao gồm các tính năng thêm, sửa, xóa, tìm kiếm cho đối tượng đó.
+      </p>
+    </section>
+
+    <!-- Tab Design -->
+    <section id="design">
+      <h2>Design</h2>
+      <p>Here you can include links to design mockups or screenshots:</p>
+      <ul>
+        <li><a href="design-paper.jpg" target="_blank">Paper design</a></li>
+        <li>
+          <a href="design-screenshot.html" target="_blank"
+            >HTML design screenshot</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <!-- Tab Implement (CRUD operations) -->
+    <section id="implement">
+      <h2>Implement</h2>
+      <h3>Object: Class Management</h3>
+
+      <!-- Add new item -->
+      <form id="addForm">
+        <label for="NameBakery">Add new Cake:</label>
+        <input type="text" id="addForm" name="NameBakery" required />
+        <button type="button" onclick="addBakery()">Add</button>
+      </form>
+
+      <!-- Search item -->
+      <form id="searchForm">
+        <label for="search">Search bakery:</label>
+        <input type="text" id="search" name="search" />
+        <button type="button" onclick="searchCake()">Search</button>
+      </form>
+      <!--COST item-->
+      <form id="costForm">
+        <label for="Cost">Cost bill:</label>
+        <input type="number" id="costForm" name="Cost" />
+        <button type="button" onclick="costCake()">Add</button>
+      </form>
+
+      <!-- Table of bakery -->
+      <table id="classTable">
+        <thead>
+          <tr>
+            <th>Cake Name</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+   
+  </body>
+</html>
